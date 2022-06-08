@@ -6,7 +6,7 @@
 $ npm install
 ```
 
-- Run the dev server
+- Run the dev server :
 
 ```shell
 $ npm start
