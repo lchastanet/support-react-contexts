@@ -1,10 +1,10 @@
 import SelectHouseType from "./SelectHouseType"
 
-function NavBar({ setHousesToRent }) {
+function NavBar() {
   return (
     <nav>
       <h1>NavBar</h1>
-      <SelectHouseType setHousesToRent={setHousesToRent} />
+      <SelectHouseType />
     </nav>
   )
 }

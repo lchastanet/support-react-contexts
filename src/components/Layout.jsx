@@ -2,11 +2,15 @@ import Header from "./Header"
 import Footer from "./Footer"
 import HouseList from "./HouseList"
 
-function Layout({ housesToRent, setHousesToRent }) {
+import { CurrentHousesContextProvider } from "../contexts/housesContext"
+
+function Layout() {
   return (
     <main>
-      <Header setHousesToRent={setHousesToRent} />
-      <HouseList housesToRent={housesToRent} />
+      <CurrentHousesContextProvider>
+        <Header />
+        <HouseList />
+      </CurrentHousesContextProvider>
       <Footer />
     </main>
   )

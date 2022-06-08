@@ -1,9 +1,9 @@
 import NavBar from "./NavBar"
 
-function Header({ setHousesToRent }) {
+function Header() {
   return (
     <>
-      <NavBar setHousesToRent={setHousesToRent} />
+      <NavBar />
     </>
   )
 }

@@ -1,6 +1,12 @@
+import { useContext } from "react"
+
 import HouseCard from "./HouseCard"
 
-function HouseList({ housesToRent }) {
+import CurrentHousesContext from "../contexts/housesContext"
+
+function HouseList() {
+  const { housesToRent } = useContext(CurrentHousesContext)
+
   return (
     <>
       <h2>HouseList</h2>

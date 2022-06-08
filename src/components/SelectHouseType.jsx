@@ -1,6 +1,10 @@
-import housesToRentData from "../data/housesToRent"
+import { useContext } from "react"
 
-function SelectHouseType({ setHousesToRent }) {
+import CurrentHousesContext from "../contexts/housesContext"
+
+function SelectHouseType() {
+  const { housesToRentData, setHousesToRent } = useContext(CurrentHousesContext)
+
   const handleChange = (e) => {
     const newList = housesToRentData.filter(
       (house) => house.type === e.target.value || e.target.value === "All"
